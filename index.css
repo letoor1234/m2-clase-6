@@ -105,8 +105,88 @@ main {
 
 /* TABLET */
 @media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    padding: 20px 30px;
+    justify-content: space-between;
+  }
+  .menu {
+    gap: 5px;
+  }
+  main {
+    padding: 10px 30px;
+  }
+  .first-section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .hero-banner,
+  .hero-text {
+    width: 50%;
+  }
+
+  .product {
+    justify-content: space-between;
+  }
+  .product-image {
+    width: 60%;
+    max-height: 10em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .product-description {
+    width: 35%;
+  }
+  .footer {
+    gap: 50px;
+    justify-content: center;
+  }
+  .footer-text {
+    width: 35%;
+    margin: 0;
+  }
 }
 
 /* DESKTOP */
 @media (min-width: 1200px) {
+  .header, .main {
+    padding: 20px 50px;
+  }
+
+  .hero-banner {
+    max-height: 15em;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .menu {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .menu-item:active {
+    background-color: #7c5858;
+    color: red;
+  }
+  .product-list {
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 35px;
+  }
+  .product {
+    flex-direction: column;
+    transition: all .3s;
+  }
+  .product:hover {
+    background-color: #5a2c2c;
+    cursor: pointer;
+    position: relative;
+  }
+  .product-image, .product-description {
+    width: 100%;
+  }
+  .footer {
+    justify-content: space-between;
+  }
 }
